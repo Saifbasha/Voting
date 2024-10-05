@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+     *{
+	    margin: 0%;
+	    padding: 0%;
+	    box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(144, 238, 144);
+    }
+    form{
+        width:40vw;
+        height:70vh;
+        background-color:rgb(135, 206, 235);
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #000;
+        padding: 50px;
+    }
+    label{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    input{
+        height: 40px;
+        width: 250px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button{
+        padding: 10px 100px;
+        font-size: 20px;
+        border-radius: 10px;
+        border:none;
+        background-color: rgb(8, 80, 8);
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    .btn{
+        text-align: center;
+        padding-top: 25px;
+    }
+</style>
+</head>
+<body>
+	<form action="count.jsp" method="post">
+         <h1>Choose Your Leader.....😎</h1><br>
+         <table >
+            <tr>
+                <td><label for="abc">ABC --(p1)</label></td>
+                <td><input type="radio"  id="abc" name="vote" value="ABC"></td>
+
+            </tr>
+            <tr>
+                <td><label for="efg">EFG --(p2)</label></td>
+                <td><input type="radio"  id="efg" name="vote" value="EFG"></td>
+            </tr>
+            <tr>
+                <td><label for="mno">MNO --(p3)</label></td>
+                <td><input type="radio"  id="mno" name="vote" value="MNO"></td>
+            </tr>
+            <tr>
+                <td><label for="xyz">XYZ --(p4)</label></td>
+                <td><input type="radio"  id="xyz" name="vote" value="XYZ"></td>
+            </tr>
+            <tr>
+                <td><label for="nota">Nota --(n)</label></td>
+                <td><input type="radio"  id="nota" name="vote" value="Nota"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn"><button>Vote</button></td>
+            </tr>
+        </table>       
+    </form>
+</body>
+</html>
+
+
+        
